@@ -22,13 +22,13 @@ defmodule Topo.Mixfile do
 
   defp deps do
     [
-      {:geo, "~> 2.1"},
+      {:geo, "~> 3.0"},
       {:seg_seg, "~> 0.1"},
       {:vector, "~> 1.0"},
       {:poison, "~> 3.0", only: [:test, :dev]},
       {:benchfella, "~> 0.3.0", only: :dev},
       {:excoveralls, "~> 0.8", only: :test},
-      {:envelope, "~> 1.0", only: :dev},
+      {:envelope, git: "git@github.com:otherchris/envelope_ex.git"},
       {:earmark, "~> 1.2", only: :dev},
       {:ex_doc, "~> 0.18", only: :dev},
       {:dialyxir, "~> 0.5", only: [:dev], runtime: false}
